@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Usermaster.master.cs" Inherits="Usermaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <style type "text/css">
+        html
+        {
+            background-color:purple;
+        }
+    .mnu
+    {
+        background-color:white; font-weight:bold; font-variant:small-caps;
+        padding:10px; color:purple; text-align:center; border-top-left-radius:5px;
+         border-top-right-radius:5px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;
+    }
+    .mnu:hover
+    {
+        background-color:Red;
+    }
+    </style>
+<body>
+    <form id="form1" runat="server">
+    <div style="width:960px; height:auto; margin:auto;">
+    <div style="font-size:60px; padding:30px; text-align:center; font-variant:small-caps; font-weight:bold; color:WHITE;">User Area</div>
+    
+    <div style="height:auto;">
+    <table width="960;">
+    <tr>
+    <td class="mnu"><a href="Userhome.aspx">Home</a></td>
+    <td class="mnu"><a href="userenquiry.aspx">Enquiry</a></td>
+    <td class="mnu"><a href="userfeedback.aspx">Feedback</a></td>
+    <td class="mnu"><a href="appointment.aspx">Appointments</a></td>
+    <td class="mnu"><a href="userchangepassword.aspx">Change Password</a></td>
+    <td class="mnu"><a href="userlogin.aspx">Logout</a></td>
+   
+    </tr>
+    </table>
+
+
+    </div>
+    
+    
+    <div style="height:300px; background-color:Purple;">
+        <img src="images/masteruser.jpg" />
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+     <div style="width:960px; height:auto; background-color:White; margin:auto; ">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+         </asp:ContentPlaceHolder>
+     </div>
+    <div style="width:960px; height:50px; background-color:transparent; margin:auto;">
+     <div style="font-size:40px; padding:5px; text-align:center; font-variant:small-caps; font-weight:bold; color:White;">
+    Designed by Kirandeep Kaur
+    </div>
+    
+
+
+    </div>
+    </form>
+</body>
+</html>

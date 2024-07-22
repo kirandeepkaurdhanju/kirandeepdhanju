@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type "text/css">
+        html
+        {
+            background-color:purple;
+        }
+    .mnu
+    {
+        background-color:white; font-weight:bold; font-variant:small-caps;
+        padding:10px; color:purple; text-align:center;
+    }
+    .mnu:hover
+    {
+        background-color:Red;
+    }
+    .photo
+    {
+        width:230.5px; height:250px;
+        }
+        .trm
+        {
+            background-color:purple; color:White; font-weight:bold; font-size:10px; font-variant:small-caps;
+        }
+    </style>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 132px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width:960px; height:auto; margin:auto;">
+    <div style="font-size:60px; padding:30px; text-align:center; font-weight:bold; color:white;">OUR WEBSITE</div>
+    
+    <div style="height:auto;">
+    <table width="960;">
+    <tr>
+    <td class="mnu"><a href="Default.aspx">Home</a></td>
+    <td class="mnu"><a href="AboutUs.aspx">About Us</a></td>
+    <td class="mnu"><a href="contactus.aspx">Contact Us</a></td>
+    <td class="mnu"><a href="gallery.aspx">Gallery</a></td>
+    <td class="mnu"><a href="services.aspx">Services</a></td>
+    <td class="mnu"><a href="contactus.aspx">Feedback</a></td>
+    <td class="mnu"><a href="userReg.aspx">Registration</a></td>
+    <td class="mnu"><a href="userlogin.aspx">User</a></td>
+    <td class="mnu"><a href="adminlogin.aspx">Admin</a></td>
+    </tr>
+    </table>
+
+
+    </div>
+    
+    
+    <div style="height:300px; background-color:Purple;">
+   <img src="images/trck88.jpg" height="300" width="960"/>
+    </div>
+           
+
+    <div>
+    
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       </asp:ContentPlaceHolder>
+    
+    
+    </div>
+
+    </div>
+
+    <div style="padding:30px;
+         background-color:white; ">
+    <div style="width:960px; margin:auto;">
+    
+    <div style="width:250px; height:250px; float:left; background-color:white;">
+    <div class="mnu">Terms and conditions</div>
+    <ul class="mnu">
+   <a href="transportationdocument.aspx"> <li>Transportation documents</li></a>
+    <a href="customerwarranty.aspx"> <li>Customer Warranties</li></a>
+   <a href="limlitationsofliability.aspx"> <li>Limitation of Liability</li></a>
+    <a href="Claim.aspx"> <li>Claims</li></a>
+    <a href="Payments.aspx"> <li>Payment</li></a>
+    <a href="cargoinsures.aspx"> <li>Cargo Insure</li></a>
+    </ul>
+   
+    
+    </div>
+    <div style="width:700px; height:250px; float:right; background-color:purple;">
+    <tr>
+    <td>
+        <img class=photo src="images/t1.jpeg" /></td>
+    <td>
+        <img class=photo src="images/t2jpg.jpg" /></td>
+    <td>
+        <img class=photo src="images/t3.jpeg" /></td>
+    </tr>
+    
+    </div>
+    <div style="clear:both"></div>
+
+
+    </div>
+    
+    </div>
+        
+
+    
+    </form>
+</body>
+</html>
